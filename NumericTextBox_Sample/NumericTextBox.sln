@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumericTextBox_Sample", "NumericTextBox_Sample.csproj", "{68235C2F-1AF8-4103-AC77-A437FC2EC3A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68235C2F-1AF8-4103-AC77-A437FC2EC3A9}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{68235C2F-1AF8-4103-AC77-A437FC2EC3A9}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{68235C2F-1AF8-4103-AC77-A437FC2EC3A9}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{68235C2F-1AF8-4103-AC77-A437FC2EC3A9}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{68235C2F-1AF8-4103-AC77-A437FC2EC3A9}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{68235C2F-1AF8-4103-AC77-A437FC2EC3A9}.Debug|iPhone.Build.0 = Debug|iPhone
+		{68235C2F-1AF8-4103-AC77-A437FC2EC3A9}.Release|iPhone.ActiveCfg = Release|iPhone
+		{68235C2F-1AF8-4103-AC77-A437FC2EC3A9}.Release|iPhone.Build.0 = Release|iPhone
+	EndGlobalSection
+EndGlobal
