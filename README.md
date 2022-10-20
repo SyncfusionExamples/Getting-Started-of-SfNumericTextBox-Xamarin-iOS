@@ -1,6 +1,6 @@
 # Getting Started with Xamarin.iOS NumericTextBox
 
-This repository contains sample for how to get started with the [Syncfusion Xamarin.iOS Numeric TextBox](https://help.syncfusion.com/xamarin-ios/sfnumerictextbox/getting-started) control. The Numeric TextBox is an advanced version of the Entry control that restricts input to numeric values.
+This repository contains sample to get started with the [Syncfusion Xamarin.iOS Numeric TextBox](https://help.syncfusion.com/xamarin-ios/sfnumerictextbox/getting-started) control. The Numeric TextBox is an advanced version of the Entry control that restricts input to numeric values.
 
 ## Syncfusion controls
 
