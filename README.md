@@ -1,76 +1,49 @@
 # Getting Started with Xamarin.iOS NumericTextBox
 
-This section explains you the steps to configure a NumericTextBox control in a real-time scenario and also provides a walk-through on some of the customization features available in NumericTextBox control.
-                        
-## Reference Essential Studio Components in your Solution
+This repository contains sample to get started with the [Syncfusion Xamarin.iOS Numeric TextBox](https://help.syncfusion.com/xamarin-ios/sfnumerictextbox/getting-started) control. The Numeric TextBox is an advanced version of the Entry control that restricts input to numeric values.
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
+## Syncfusion controls
 
-{Syncfusion Installed location}\Essential Studio{version number}\lib
+This project used the following Syncfusion control(s):
+* [SfNumericTextBox](https://www.syncfusion.com/xamarin-ios-ui-controls/numeric-textbox)
 
-N> Assemblies are available in unzipped package location in Mac
+## Requirements to run the sample
 
-and below assembly reference to the iOS unified project.
+* [Visual Studio](https://visualstudio.microsoft.com/downloads/) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
 
-iOS-unifed\Syncfusion.SfNumericTextBox.iOS.dll
+Refer to the following link for more details - [System Requirements](https://help.syncfusion.com/xamarin-ios/system-requirements)
 
-## Add SfNumericTextBox
+## How to run the sample
 
-* Adding namespace for the added assemblies. 
+1. Clone the sample and open it in Visual Studio.
 
-{% highlight c# %}
+   *Note: If you download the sample using the "Download ZIP" option, right-click it, select Properties, and then select Unblock.*
+   
+2. Register your license key in the FinishedLaunching override method of AppDelegate.cs file as demonstrated in the following code.
 
-using Syncfusion.SfNumericTextBox.iOS; 
+		public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
+		{
+			//Register Syncfusion license
+			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
 
-{% endhighlight %}
+			// create a new window instance based on the screen size
+			Window = new UIWindow(UIScreen.MainScreen.Bounds);
 
-* Now add the SfNumericTextBox control with a required optimal name by using the included namespace.
+			// If you have defined a root view controller, set it here:
+			// Window.RootViewController = myViewController;
 
-{% highlight c# %}
+			// make the window visible
+			Window.MakeKeyAndVisible();
 
-[C#]
-
-SfNumericTextBox numericTextBox = new SfNumericTextBox()
-{
+			return true;
+		}
+		
+	Refer to this [link](https://help.syncfusion.com/xamarin-ios/licensing/overview) for more details.
 	
-	Frame = new CGRect(10, 50, 350, 40),
-};
-this.Add(numericTextBox); 
+3. Clean and build the application.
 
-{% endhighlight %}
+4. Run the application.
 
-## Enable Parsing Mode
+## License
 
-SfNumericTextBox provides option to display the value in double or decimal. Following code shows the Decimal parsing mode which can be set through `ParserMode` property.
-
-{% highlight c# %}
-
-[C#]
-
-numericTextBox.ParserMode = SFNumericTextBoxParsers.Decimal;
-	
-{% endhighlight %}
-
-## Configuring properties
-
-Format string, value and maximum number of decimal digits can be customized in SfNumericTextBox as below.
-
-{% highlight c# %}
-
-[C#]
-
-SfNumericTextBox numericTextBox = new SfNumericTextBox()
-{
-	
-	Value = 1000,
-	Watermark = "Principal Amount",
-	MaximumNumberDecimalDigits = 2,
-	FormatString = "c",
-	AllowNull = true,
-	CultureInfo = new NSLocale("en_us"),
-	PercentDisplayMode = SFNumericTextBoxPercentDisplayMode.Compute,
-};
-
-{% endhighlight %}
-
-![NumericTextBox-iOS](images/NumericTextBox-iOS.png)
+Syncfusion has no liability for any damage or consequence that may arise by using or viewing the samples. The samples are for demonstrative purposes, and if you choose to use or access the samples, you agree to not hold Syncfusion liable, in any form, for any damage that is related to use, for accessing, or viewing the samples. By accessing, viewing, or seeing the samples, you acknowledge and agree Syncfusion’s samples will not allow you seek injunctive relief in any form for any claim related to the sample. If you do not agree to this, do not view, access, utilize, or otherwise do anything with Syncfusion’s samples.
